@@ -1,0 +1,306 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kunal Aggrawal — AI Engineer & ML Developer</title>
+  <meta name="description" content="Kunal Aggrawal — AI Engineer specializing in LLMs, FastAPI, LangChain, MLOps, and cloud infrastructure. Building production-grade AI systems at AmigoLabs." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo"><span class="logo-bracket">&lt;</span>KA<span class="logo-bracket">/&gt;</span></div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#experience" class="nav-link">Experience</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#certifications" class="nav-link">Certs</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+    <a href="Kunal_Aggrawal.pdf" download class="nav-cta" id="navCta">Download CV</a>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </nav>
+
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <div class="hero-orb orb-1"></div>
+      <div class="hero-orb orb-2"></div>
+      <div class="hero-orb orb-3"></div>
+      <canvas id="particleCanvas"></canvas>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge animate-in delay-1"><span class="badge-dot"></span> Currently @ AmigoLabs — AI Engineer</div>
+      <h1 class="hero-name animate-in delay-2">Kunal<br /><span class="gradient-text">Aggrawal</span></h1>
+      <p class="hero-tagline animate-in delay-3">Building <span class="highlight">Production-Grade AI Systems</span> —<br />LLMs · RAG · MLOps · FastAPI · LangChain · Cloud</p>
+      <div class="hero-actions animate-in delay-4">
+        <a href="#projects" class="btn btn-primary" id="heroProjectsBtn"><span>View My Work</span><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        <a href="#contact" class="btn btn-secondary" id="heroContactBtn">Get In Touch</a>
+      </div>
+      <div class="hero-stats animate-in delay-5">
+        <div class="stat"><span class="stat-number" data-target="4">0</span>+<span class="stat-label">Enterprise Clients</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-number" data-target="3">0</span><span class="stat-label">Roles @ AmigoLabs</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-number" data-target="80">0</span>%+<span class="stat-label">Text-to-SQL Accuracy</span></div>
+      </div>
+    </div>
+    <div class="hero-scroll-hint"><span>Scroll</span><div class="scroll-line"></div></div>
+  </section>
+
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header"><span class="section-tag">001 / About</span><h2 class="section-title">Who I Am</h2></div>
+      <div class="about-grid">
+        <div class="about-text">
+          <p class="about-lead">I'm an <strong>AI Engineer at AmigoLabs</strong> building real, client-deployed AI systems — not toy demos.</p>
+          <p class="about-body">My work spans from automating <strong>Bain & Company's</strong> GitHub workflows with n8n + Python, to building OCR/LLM invoice extractors processing <strong>~3,000 invoices/day</strong> for Suzuki, to delivering supply-chain digitization POCs for Lumax. Every project ships to production.</p>
+          <p class="about-body">I've explored the full <strong>MLOps stack</strong> — Kubernetes, Kubeflow, MLflow, Prometheus, Grafana — building end-to-end ML lifecycle systems for Concentrix. On the cloud side, I've hands-on configured AWS: EC2, RDS, S3, VPC, ALB, Route 53, CloudWatch, ECR, plus Terraform for IaC.</p>
+          <div class="about-info-row">
+            <div class="info-item"><span class="info-icon">🎓</span><div><span class="info-label">MCA — University of Delhi</span><span class="info-sub">CGPA: 8.45 · 2023–2025</span></div></div>
+            <div class="info-item"><span class="info-icon">📍</span><div><span class="info-label">New Delhi, India</span><span class="info-sub">Open to remote & relocation</span></div></div>
+          </div>
+        </div>
+        <div class="about-card-wrap">
+          <div class="about-card glass-card">
+            <div class="about-card-header"><div class="terminal-dots"><span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span></div><span class="terminal-title">kunal@amigolabs ~ $</span></div>
+            <div class="terminal-body">
+              <div class="t-line"><span class="t-prompt">$</span> whoami</div>
+              <div class="t-line t-out">AI Engineer · MLOps · Backend</div>
+              <div class="t-line mt-1"><span class="t-prompt">$</span> cat stack.txt</div>
+              <div class="t-line t-out"><span class="t-key">lang:</span> Python, SQL</div>
+              <div class="t-line t-out"><span class="t-key">ai/ml:</span> LangChain, LangGraph, Ollama</div>
+              <div class="t-line t-out"><span class="t-key">backend:</span> FastAPI, PostgreSQL, Docker</div>
+              <div class="t-line t-out"><span class="t-key">mlops:</span> Kubeflow, MLflow, K8s</div>
+              <div class="t-line t-out"><span class="t-key">cloud:</span> AWS (EC2, S3, RDS, VPC...)</div>
+              <div class="t-line t-out"><span class="t-key">iac:</span> Terraform</div>
+              <div class="t-line mt-1"><span class="t-prompt">$</span> <span class="cursor-blink">_</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt" id="skills">
+    <div class="container">
+      <div class="section-header"><span class="section-tag">002 / Skills</span><h2 class="section-title">Technical Arsenal</h2></div>
+      <div class="skills-grid">
+        <div class="skill-category glass-card">
+          <div class="skill-cat-header"><div class="skill-icon">🧠</div><h3>AI / ML</h3></div>
+          <div class="skill-tags">
+            <span class="skill-tag tag-hot">LangChain</span><span class="skill-tag tag-hot">LangGraph</span><span class="skill-tag tag-hot">Ollama</span>
+            <span class="skill-tag">RAG Pipelines</span><span class="skill-tag">LLM Orchestration</span><span class="skill-tag">Text-to-SQL</span>
+            <span class="skill-tag">OCR</span><span class="skill-tag">Scikit-learn</span><span class="skill-tag">Pandas / NumPy</span>
+            <span class="skill-tag">Neural Networks</span><span class="skill-tag">CNN</span><span class="skill-tag">DeepSeek</span>
+          </div>
+        </div>
+        <div class="skill-category glass-card">
+          <div class="skill-cat-header"><div class="skill-icon">⚙️</div><h3>Backend</h3></div>
+          <div class="skill-tags">
+            <span class="skill-tag tag-hot">FastAPI</span><span class="skill-tag tag-hot">PostgreSQL</span><span class="skill-tag">REST APIs</span>
+            <span class="skill-tag">JWT / OAuth 2.0</span><span class="skill-tag">Pydantic</span><span class="skill-tag">SSMS</span>
+            <span class="skill-tag">n8n</span><span class="skill-tag">Autogen</span><span class="skill-tag">Vapi + Twilio</span>
+            <span class="skill-tag">Python</span><span class="skill-tag">SQL</span>
+          </div>
+        </div>
+        <div class="skill-category glass-card">
+          <div class="skill-cat-header"><div class="skill-icon">🚀</div><h3>MLOps & DevOps</h3></div>
+          <div class="skill-tags">
+            <span class="skill-tag tag-hot">Docker</span><span class="skill-tag tag-hot">Kubernetes</span><span class="skill-tag">Kubeflow</span>
+            <span class="skill-tag">MLflow</span><span class="skill-tag">Prometheus</span><span class="skill-tag">Grafana</span>
+            <span class="skill-tag">CI/CD</span><span class="skill-tag">Nginx</span><span class="skill-tag">VPS Deployment</span>
+            <span class="skill-tag">SSH Hardening</span><span class="skill-tag">Fail2Ban</span>
+          </div>
+        </div>
+        <div class="skill-category glass-card">
+          <div class="skill-cat-header"><div class="skill-icon">☁️</div><h3>Cloud & IaC</h3></div>
+          <div class="skill-tags">
+            <span class="skill-tag tag-hot">AWS EC2</span><span class="skill-tag tag-hot">AWS S3</span><span class="skill-tag">AWS RDS</span>
+            <span class="skill-tag">AWS VPC</span><span class="skill-tag">AWS ECR</span><span class="skill-tag">AWS ALB</span>
+            <span class="skill-tag">Route 53</span><span class="skill-tag">CloudWatch</span><span class="skill-tag">Secrets Manager</span>
+            <span class="skill-tag">Terraform</span><span class="skill-tag">Cloudflare</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="experience">
+    <div class="container">
+      <div class="section-header"><span class="section-tag">003 / Experience</span><h2 class="section-title">Work History</h2></div>
+      <div class="timeline">
+        <div class="timeline-item" id="exp-ai-engineer">
+          <div class="timeline-marker"><div class="marker-dot"></div><div class="marker-line"></div></div>
+          <div class="timeline-card glass-card">
+            <div class="exp-header">
+              <div><h3 class="exp-role">AI Engineer</h3><p class="exp-company"><a href="https://amigolabs.com" target="_blank" rel="noopener">AmigoLabs</a></p></div>
+              <div class="exp-meta"><span class="exp-date">Jan 2026 — Present</span><span class="exp-badge badge-current">Current</span></div>
+            </div>
+            <div class="exp-tech"><span>Python</span><span>FastAPI</span><span>n8n</span><span>GitHub REST API</span><span>PostgreSQL</span><span>Nginx</span><span>LLM</span><span>OCR</span><span>CI/CD</span></div>
+            <ul class="exp-bullets">
+              <li><span class="bullet-icon">▸</span>Designed a <strong>GitHub repo automation system</strong> for a <strong>Bain &amp; Company engagement</strong> using n8n + Python — identified users inactive 90+ days, auto-revoked access via GitHub REST API, generated admin summary reports, reducing manual repo-hygiene effort to <strong>zero</strong>.</li>
+              <li><span class="bullet-icon">▸</span>Built end-to-end <strong>Car Comparison Dashboard</strong> integrating <strong>7–10 OEM sources</strong> (Maruti, Kia, etc.) across ~50 vehicle models using AI pipelines → PostgreSQL → VPS with Nginx + CI/CD for automated deployments.</li>
+              <li><span class="bullet-icon">▸</span>Developed an <strong>Invoice Data Extractor POC for Suzuki</strong> using OCR + LLM-based parsing to extract vendor, amount, line-item, and date fields from <strong>~3,000 invoices/day</strong>.</li>
+              <li><span class="bullet-icon">▸</span>Delivered <strong>4 enterprise client POCs</strong> — Bain &amp; Company, Suzuki, Lumax — including a supply-chain digitization system replacing manual Excel-based processes.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="timeline-item" id="exp-ml-intern">
+          <div class="timeline-marker"><div class="marker-dot"></div><div class="marker-line"></div></div>
+          <div class="timeline-card glass-card">
+            <div class="exp-header">
+              <div><h3 class="exp-role">Junior AI/ML Intern</h3><p class="exp-company"><a href="https://amigolabs.com" target="_blank" rel="noopener">AmigoLabs</a></p></div>
+              <div class="exp-meta"><span class="exp-date">Oct 2025 — Dec 2025</span></div>
+            </div>
+            <div class="exp-tech"><span>Kubeflow</span><span>Kubernetes</span><span>Docker</span><span>MLflow</span><span>Prometheus</span><span>Grafana</span><span>Linux</span></div>
+            <ul class="exp-bullets">
+              <li><span class="bullet-icon">▸</span>Built an <strong>on-premise ML lifecycle management POC for Concentrix</strong> — model registry, serving, monitoring on Kubeflow; first production deployment of Kubernetes + Kubeflow.</li>
+              <li><span class="bullet-icon">▸</span>Orchestrated containerized ML components via <strong>Kubernetes</strong> for secure, modular pipeline deployment within client infrastructure.</li>
+              <li><span class="bullet-icon">▸</span>Built <strong>4 monitoring dashboards</strong> on Prometheus + Grafana for real-time model-serving visibility and alerting across deployed ML pipelines.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="timeline-item" id="exp-python-intern">
+          <div class="timeline-marker"><div class="marker-dot"></div></div>
+          <div class="timeline-card glass-card">
+            <div class="exp-header">
+              <div><h3 class="exp-role">Python Developer Intern</h3><p class="exp-company"><a href="https://amigolabs.com" target="_blank" rel="noopener">AmigoLabs</a></p></div>
+              <div class="exp-meta"><span class="exp-date">May 2025 — Sep 2025</span></div>
+            </div>
+            <div class="exp-tech"><span>FastAPI</span><span>SSMS</span><span>Autogen</span><span>REST API</span><span>Docker</span><span>DeepSeek</span></div>
+            <ul class="exp-bullets">
+              <li><span class="bullet-icon">▸</span>Built scalable <strong>REST APIs with FastAPI</strong> for a Lead Generation Platform improving response efficiency by <strong>30%</strong>; implemented a RAG pipeline for personalized seller context.</li>
+              <li><span class="bullet-icon">▸</span>Integrated <strong>Google OAuth 2.0</strong> + automated email; added JWT auth eliminating manual outreach entirely. Integrated <strong>Voice AI (Vapi + Twilio)</strong> for live AI-driven phone calls.</li>
+              <li><span class="bullet-icon">▸</span>Engineered a <strong>Text-to-SQL multi-agent system with DeepSeek</strong>, query-complexity orchestration, and error-retry SQL generation — achieving <strong>~80% query accuracy</strong> with automated visualizations and forecasting.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt" id="projects">
+    <div class="container">
+      <div class="section-header"><span class="section-tag">004 / Projects</span><h2 class="section-title">What I've Built</h2><p class="section-sub">Real projects. No toy examples.</p></div>
+      <div class="projects-grid">
+        <div class="project-card glass-card" id="proj-blog-generator">
+          <div class="project-card-top">
+            <div class="project-icon-wrap"><span class="project-icon">✍️</span></div>
+            <div class="project-links">
+              <a href="https://github.com/aggrawalk970-cyber" target="_blank" rel="noopener" class="project-link-btn" title="GitHub" id="proj-blog-github">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.868-.013-1.703-2.782.605-3.369-1.34-3.369-1.34-.454-1.154-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0 1 12 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.741 0 .267.18.579.688.481C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">AI Powered Blog Generator — Backend</h3>
+          <p class="project-desc">FastAPI + Gemini AI API backend automating blog content creation from user prompts, reducing manual effort by <strong>90%</strong>. Clean REST schemas with Pydantic, PostgreSQL for persistent storage, modular DB layer for scalability.</p>
+          <div class="project-tech"><span>FastAPI</span><span>PostgreSQL</span><span>Google Gemini API</span><span>Pydantic</span><span>Python</span></div>
+          <div class="project-footer"><span class="project-status status-live">Live on GitHub</span></div>
+        </div>
+        <div class="project-card glass-card" id="proj-rag-qa">
+          <div class="project-card-top">
+            <div class="project-icon-wrap"><span class="project-icon">🔍</span></div>
+            <div class="project-links">
+              <a href="https://github.com/aggrawalk970-cyber" target="_blank" rel="noopener" class="project-link-btn" title="GitHub" id="proj-rag-github">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.868-.013-1.703-2.782.605-3.369-1.34-3.369-1.34-.454-1.154-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0 1 12 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.741 0 .267.18.579.688.481C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">RAG-based Question Answering System</h3>
+          <p class="project-desc">Context-aware QA over multiple scraped URLs using <strong>LangChain + Ollama (Llama 3.2 1B)</strong>. Document chunking, vector embeddings, similarity search — interactive Streamlit UI. Full local inference, zero API costs.</p>
+          <div class="project-tech"><span>LangChain</span><span>Ollama</span><span>Streamlit</span><span>Python</span><span>Vector Search</span></div>
+          <div class="project-footer"><span class="project-status status-live">Live on GitHub</span></div>
+        </div>
+        <div class="project-card glass-card" id="proj-fastapi-aws">
+          <div class="project-card-top">
+            <div class="project-icon-wrap"><span class="project-icon">☁️</span></div>
+            <div class="project-links">
+              <a href="https://github.com/aggrawalk970-cyber/fastapi-aws-project" target="_blank" rel="noopener" class="project-link-btn" title="GitHub" id="proj-aws-github">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.868-.013-1.703-2.782.605-3.369-1.34-3.369-1.34-.454-1.154-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0 1 12 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.741 0 .267.18.579.688.481C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">FastAPI + Full AWS Stack Deployment</h3>
+          <p class="project-desc">End-to-end AWS infrastructure from scratch via AWS Console: <strong>EC2, RDS, S3, VPC, Subnets, ECR, ALB, Route 53, CloudWatch, Secrets Manager</strong>. Domain migrated from Cloudflare → Route 53. Containerized with Docker + ECR.</p>
+          <div class="project-tech"><span>AWS EC2</span><span>RDS</span><span>S3</span><span>VPC</span><span>ECR</span><span>ALB</span><span>Route 53</span><span>CloudWatch</span><span>Docker</span><span>FastAPI</span></div>
+          <div class="project-footer"><span class="project-status status-wip">Learning Project</span></div>
+        </div>
+        <div class="project-card glass-card" id="proj-terraform">
+          <div class="project-card-top">
+            <div class="project-icon-wrap"><span class="project-icon">🏗️</span></div>
+            <div class="project-links"><span class="project-link-btn project-link-disabled" title="Coming Soon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></span></div>
+          </div>
+          <h3 class="project-title">Terraform Infrastructure as Code — AWS</h3>
+          <p class="project-desc">Declarative AWS infrastructure with <strong>Terraform</strong> — provisioning compute, networking, storage, and security groups. Multiple <code>.tf</code> resource files covering real infrastructure patterns used in production IaC pipelines.</p>
+          <div class="project-tech"><span>Terraform</span><span>AWS EC2</span><span>AWS VPC</span><span>AWS S3</span><span>Security Groups</span><span>IaC</span></div>
+          <div class="project-footer"><span class="project-status status-wip">In Progress</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="certifications">
+    <div class="container">
+      <div class="section-header"><span class="section-tag">005 / Certifications</span><h2 class="section-title">Credentials</h2></div>
+      <div class="certs-grid">
+        <div class="cert-card glass-card" id="cert-ds-ml">
+          <div class="cert-icon">🏆</div>
+          <div class="cert-info">
+            <h3 class="cert-title">Decode Data Science with Machine Learning</h3>
+            <p class="cert-issuer">PWskills Platform</p>
+            <p class="cert-desc">Foundational ML algorithms including regression, classification, and ensemble learning.</p>
+          </div>
+          <div class="cert-date">Sep 2024</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt" id="contact">
+    <div class="container">
+      <div class="section-header"><span class="section-tag">006 / Contact</span><h2 class="section-title">Let's Talk</h2><p class="section-sub">Open to AI/ML engineering roles, backend opportunities, and interesting conversations.</p></div>
+      <div class="contact-wrap">
+        <div class="contact-links">
+          <a href="mailto:aggrawalk970@gmail.com" class="contact-card glass-card" id="contact-email">
+            <div class="contact-card-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg></div>
+            <div><span class="contact-label">Email</span><span class="contact-value">aggrawalk970@gmail.com</span></div>
+            <svg class="contact-arrow" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a href="https://github.com/aggrawalk970-cyber" target="_blank" rel="noopener" class="contact-card glass-card" id="contact-github">
+            <div class="contact-card-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.868-.013-1.703-2.782.605-3.369-1.34-3.369-1.34-.454-1.154-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0 1 12 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.741 0 .267.18.579.688.481C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg></div>
+            <div><span class="contact-label">GitHub</span><span class="contact-value">aggrawalk970-cyber</span></div>
+            <svg class="contact-arrow" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a href="https://linkedin.com/in/kunal-aggrawal" target="_blank" rel="noopener" class="contact-card glass-card" id="contact-linkedin">
+            <div class="contact-card-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg></div>
+            <div><span class="contact-label">LinkedIn</span><span class="contact-value">kunal-aggrawal</span></div>
+            <svg class="contact-arrow" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a href="tel:+917417738058" class="contact-card glass-card" id="contact-phone">
+            <div class="contact-card-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.07 12 19.79 19.79 0 0 1 1 3.18 2 2 0 0 1 2.96 1h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.09 8.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 21 16.92z"/></svg></div>
+            <div><span class="contact-label">Phone</span><span class="contact-value">+91-7417738058</span></div>
+            <svg class="contact-arrow" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-logo"><span class="logo-bracket">&lt;</span>KA<span class="logo-bracket">/&gt;</span></div>
+      <p class="footer-copy">© 2025 Kunal Aggrawal. Built with care — no frameworks, just code.</p>
+      <a href="Kunal_Aggrawal.pdf" download class="footer-resume" id="footerResume">Download Resume ↓</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
